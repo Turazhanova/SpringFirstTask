@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="main_layout.html">
+    <div style="background-color: #390b4e; color: white" layout:fragment="siteContent">
+      <form action="/addStudent" method="post">
+          <div class="row mt-2">
+            <div class="col-12">
+                <span>NAME:</span>
+            </div>
+          </div>
+        <div class="row mt-2">
+          <div class="col-12">
+             <input type="text" class="form-control" name="name" placeholder="Enter your Name">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <span>SURNAME:</span>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <input type="text" class="form-control" name="surname" placeholder="Enter your SURNAME">
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-12">
+            <span>EXAM:</span>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-12">
+            <input type="number" class="form-control" name="point" placeholder="Enter your points">
+          </div>
+
+        </div>
+          <div class="row mt-2">
+              <div class="col-12">
+
+                    <button class="btn btn btn-primary btn-sm">Add Students</button>
+              </div>
+          </div>
+      </form>
+    </div>
+</html>
